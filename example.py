@@ -15,7 +15,7 @@ custom_model = AutoModel.from_pretrained(modelName, config=custom_config)       
 model = Summarizer(
     custom_model=custom_model, 
     custom_tokenizer=custom_tokenizer,
-    sentence_handler = SentenceHandler(language=Chinese)
+    sentence_handler = SentenceHandler(language=Chinese)                            # 設定摘要模型語言(沒設效果有差)
 )
 
 #%%
